@@ -15,7 +15,7 @@ role: Staff Research Scientist
 # Organizations/Affiliations
 organizations:
 - name: Tableau Research
-  url: "https://research.tableau.com"
+  url: "https://research.tableau.com/user/daniel-ting"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My recent research focuses on data sketching and sampling. These techniques drastically reduce the size of Big Data and allow users to extract approximate answers from in-memory summaries that are constructed in one-pass over the original data.
