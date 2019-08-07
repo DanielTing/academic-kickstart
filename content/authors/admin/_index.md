@@ -71,6 +71,6 @@ email: ""
 # - Visitors
 ---
 
-My research is in statistics, databases, and machine learning. In particular, my recent work is primarily on the topic of data sketching. These are techniques for approximate query processing where a stream of Big Data is compressed into a small memory summary that can be queried quickly and provide answers to a range of questions. It lies in the intersection of statistics, databases, and algorithms. I also work on manifold learning.
+My research is in statistics, databases, and machine learning. In particular, my recent work is primarily on the topic of data sketching. These are techniques for approximate query processing where a stream of Big Data is compressed into a small memory summary that can be queried quickly and provide answers to a range of questions. It lies in the intersection of statistics, databases, and algorithms. 
 
-In the past, I worked on online experimentation at FB where I helped start and build the experiment analysis platform Deltoid. My past research also included non-parametric Bayesian methods and data privacy.
+I received my PhD in Statistics at UC Berkeley under the supervision of Michael Jordan. My PhD work focused on non-parametric Bayesian cluster models and semi-supervised/manifold learning. I continue to work on manifold learning. I also worked on data privacy for my MSc at Carnegie Mellon under Stephen Fienberg. Before Tableau, I was a core data scientist at Facebook where I helped start and build the experimentat analysis platform.
