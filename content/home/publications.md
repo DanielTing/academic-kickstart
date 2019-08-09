@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 90  # Order that this section will appear.
 
-title = "Recent Publications"
+title = "Publications"
 subtitle = ""
 
 [content]
@@ -57,6 +57,10 @@ subtitle = ""
 
   # Text color (true=light or false=dark).
   # text_color_light = true  
+  
+[design.spacing]
+  # Customize the section spacing. Order is top, right, bottom, left.
+  padding = ["25px", "0", "25px", "0"]
   
 [advanced]
  # Custom CSS. 
