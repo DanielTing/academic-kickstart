@@ -6,7 +6,7 @@ authors: ["John Mark Agosta", "Jaideep Chandrashekar", "Mark Crovella", "Nina Ta
 publication_types: ["1"]
 abstract: ""
 featured: false
-publication: "*Proceedings of the IEEE INFOCOM 2013, Turin, Italy, April 14-19, 2013*"
+publication: "*INFOCOM*"
 url_pdf: "https://doi.org/10.1109/INFCOM.2013.6566768"
 doi: "10.1109/INFCOM.2013.6566768"
 ---

@@ -6,7 +6,7 @@ authors: ["Daniel Ting"]
 publication_types: ["1"]
 abstract: ""
 featured: false
-publication: "*Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, San Francisco, CA, USA, August 13-17, 2016*"
+publication: "*KDD*"
 url_pdf: "https://doi.org/10.1145/2939672.2939772"
 doi: "10.1145/2939672.2939772"
 ---

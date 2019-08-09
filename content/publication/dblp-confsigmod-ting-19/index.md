@@ -6,7 +6,7 @@ authors: ["Daniel Ting"]
 publication_types: ["1"]
 abstract: ""
 featured: false
-publication: "*Proceedings of the 2019 International Conference on Management of Data, SIGMOD Conference 2019, Amsterdam, The Netherlands, June 30 - July 5, 2019.*"
+publication: "*SIGMOD*"
 url_pdf: "https://doi.org/10.1145/3299869.3319897"
 doi: "10.1145/3299869.3319897"
 ---

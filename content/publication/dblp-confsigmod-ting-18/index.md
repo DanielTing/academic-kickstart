@@ -6,7 +6,7 @@ authors: ["Daniel Ting"]
 publication_types: ["1"]
 abstract: ""
 featured: false
-publication: "*Proceedings of the 2018 International Conference on Management of Data, SIGMOD Conference 2018, Houston, TX, USA, June 10-15, 2018*"
+publication: "*SIGMOD*"
 url_pdf: "https://doi.org/10.1145/3183713.3183759"
 doi: "10.1145/3183713.3183759"
 ---

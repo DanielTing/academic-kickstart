@@ -6,7 +6,7 @@ authors: ["Daniel Ting"]
 publication_types: ["1"]
 abstract: ""
 featured: false
-publication: "*The 20th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD '14, New York, NY, USA - August 24 - 27, 2014*"
+publication: "*KDD*"
 url_pdf: "https://doi.org/10.1145/2623330.2623669"
 doi: "10.1145/2623330.2623669"
 ---
