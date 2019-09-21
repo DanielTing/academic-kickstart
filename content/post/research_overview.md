@@ -1,7 +1,7 @@
 ---
 title: "Research overview"
 date: 2019-09-20T08:47:11+01:00
-draft: true
+draft: false
 ---
 
 As with any researcher, I’m often asked what my research area is. Mine is Data Sketching. It can be considered a somewhat niche area, but it's one I’m quite excited about. It can have incredible impact in how people use data, and imho is a beautiful marriage of statistical theory and a practical problem. Fundamentally, it boils down to solving the following question:
