@@ -1,7 +1,7 @@
 ---
 title: Fast Updates for Line-Rate HyperLogLog-Based Cardinality Estimation
 date: '2020-01-01'
-draft: true
+draft: false
 publishDate: '2021-07-13T22:25:12.029985Z'
 authors:
 - Pedro Reviriego

@@ -1,0 +1,18 @@
+---
+title: 'Security of HyperLogLog (HLL) Cardinality Estimation: Vulnerabilities and
+  Protection'
+date: '2020-01-01'
+draft: false
+publishDate: '2021-07-13T22:25:11.450575Z'
+authors:
+- Pedro Reviriego
+- Daniel Ting
+publication_types:
+- '2'
+abstract: ''
+featured: false
+publication: '*IEEE Commun. Lett.*'
+url_pdf: https://doi.org/10.1109/LCOMM.2020.2972895
+doi: 10.1109/LCOMM.2020.2972895
+---
+

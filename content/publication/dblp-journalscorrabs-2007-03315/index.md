@@ -1,7 +1,7 @@
 ---
 title: Manifold Learning via Manifold Deflation
 date: '2020-01-01'
-draft: true
+draft: false
 publishDate: '2021-07-13T22:25:12.345191Z'
 authors:
 - Daniel Ting

@@ -1,0 +1,17 @@
+---
+title: Conditional Cuckoo Filters
+date: '2021-01-01'
+draft: false
+publishDate: '2021-07-13T22:25:06.689414Z'
+authors:
+- Daniel Ting
+- Rick Cole
+publication_types:
+- '1'
+abstract: ''
+featured: false
+publication: '*SIGMOD*'
+url_pdf: https://doi.org/10.1145/3448016.3452811
+doi: 10.1145/3448016.3452811
+---
+
