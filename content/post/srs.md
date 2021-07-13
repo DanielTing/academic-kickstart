@@ -36,7 +36,7 @@ import scipy.stats.distributions as distributionsdef fisher\_yates(n, k):
 
 The Fisher-Yates shuffle essentially repeatedly samples without replacement. After iteration t, the t items at the end of the array are samples, and those at the beginning are the n-t unsampled items. Each iteration draws a position in the array of unsampled items, and a swap simultaneously moves the chosen item to the samples while updating the unsampled items.
 
-<img alt="" class="t u v jz ak" src="https://miro.medium.com/max/1400/1\*iv7m3akC9-RCWizCAGl4QA.png" width="700" height="218" srcSet="https://miro.medium.com/max/552/1\*iv7m3akC9-RCWizCAGl4QA.png 276w, https://miro.medium.com/max/1104/1\*iv7m3akC9-RCWizCAGl4QA.png 552w, https://miro.medium.com/max/1280/1\*iv7m3akC9-RCWizCAGl4QA.png 640w, https://miro.medium.com/max/1400/1\*iv7m3akC9-RCWizCAGl4QA.png 700w" sizes="700px" role="presentation"/>
+<img alt="" class="t u v jz ak" src="fisher-yates.png" width="700" height="218" sizes="700px" role="presentation"/>
 
 Sampling instead of shuffling only requires k draws, and using this fact gives the classical swapping procedure. Unfortunately, even with this optimization, the algorithm takes O(n) time to initialize a length n array.
 
@@ -94,7 +94,7 @@ This algorithm also falls out naturally from the transposition representation. A
 
 To see this, imagine the transpositions are applied to an array initialized to 1, …, n. The first n-k positions always represent the unsampled items. The ith iteration decides what should go in position n-k+i in the array. If it selects an item R not in the sample (i.e. from the first n-k positions) it swaps out the initial value of n-k+i with R, which adds R to the sample. Otherwise it swaps it with another value that is already in the sample, so the initial value n-k+1 is retained and added to the sample.
 
-<img alt="" class="t u v jz ak" src="https://miro.medium.com/max/1400/1\*i0G-\_6hE7okCSn410gX\_Bg.png" width="700" height="218" srcSet="https://miro.medium.com/max/552/1\*i0G-\_6hE7okCSn410gX\_Bg.png 276w, https://miro.medium.com/max/1104/1\*i0G-\_6hE7okCSn410gX\_Bg.png 552w, https://miro.medium.com/max/1280/1\*i0G-\_6hE7okCSn410gX\_Bg.png 640w, https://miro.medium.com/max/1400/1\*i0G-\_6hE7okCSn410gX\_Bg.png 700w" sizes="700px" role="presentation"/>
+<img alt="" class="t u v jz ak" src="floyd.png" width="700" height="218" sizes="700px" role="presentation"/>
 
 If not only the sampled items but their positions in the array are maintained, you get a new, simpler variant of Floyd’s algorithm for generating a sample in random order.
 
@@ -140,7 +140,7 @@ def in\_order\_sampler(n, k, offset=0):
 
 To see how this works, draw the same sample two different ways: first by shuffling and then by counting. Start with an array of n independent Uniform(\[0,1\]) random variables. Sorting them generates a random permutation and then “unsorting” generates the inverse permutation. So if I start with the sorted values and “unsort” them to shuffle the array, selecting the first k values gives a random sample from the set of Uniform(\[0,1\]) values. The positions of these selected items in the sorted array gives a random sample of 1, …, n. These positions can be computed a second way. Draw the first k independent Uniform(\[0,1\]) values: U₁,U₂, …, U\_k. The position of an item Uₓ can be computed by drawing the remaining Uniform random variates and counting how many are ≤ Uₓ.
 
-<img alt="" class="t u v jz ak" src="https://miro.medium.com/max/1400/1\*Kr0W7YuSVnx5gumbPq3q9w.png" width="700" height="336" srcSet="https://miro.medium.com/max/552/1\*Kr0W7YuSVnx5gumbPq3q9w.png 276w, https://miro.medium.com/max/1104/1\*Kr0W7YuSVnx5gumbPq3q9w.png 552w, https://miro.medium.com/max/1280/1\*Kr0W7YuSVnx5gumbPq3q9w.png 640w, https://miro.medium.com/max/1400/1\*Kr0W7YuSVnx5gumbPq3q9w.png 700w" sizes="700px" role="presentation"/>
+<img alt="" class="t u v jz ak" src="betabinomial_sequential.png sizes="700px" role="presentation"/>
 
 Concretely, the first position L in the sample can be computed by taking k Uniform(\[0,1\]) draws and computing their minimum B. The position is simply how many of the remaining n-k Uniform(\[0,1\]) draws that are < B plus 1. This makes the problem of drawing a position easy. Draw B, then count.
 
