@@ -1,7 +1,8 @@
-Fun with Optimal Random Sampling
-================================
-
-[![Daniel Ting](https://miro.medium.com/fit/c/96/96/1*dmbNkD5D-u45r44go_cf0g.png)](https://medium.com/@daniel.ting?source=post_page-----b08d72e77ade--------------------------------)[Daniel Ting](https://medium.com/@daniel.ting?source=post_page-----b08d72e77ade--------------------------------)[Follow](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2F12f1ac89e67b&operation=register&redirect=https%3A%2F%2Fengineering.tableau.com%2Ffun-with-optimal-random-sampling-b08d72e77ade&user=Daniel%20Ting&userId=12f1ac89e67b&source=post_page-12f1ac89e67b----b08d72e77ade---------------------follow_byline-----------)[Apr 12](https://medium.com/fun-with-optimal-random-sampling-b08d72e77ade?source=post_page-----b08d72e77ade--------------------------------) · 8 min read
+---
+title: "Fun with Optimal Random Sampling"
+date: 2020-04-12T08:47:11+01:00
+draft: false
+---
 
 Finding an elegant solution to a basic problem can be fun (and especially nice when it can be put into practice). In this post, I’ll introduce three random sampling algorithms that are optimal, elegant, and extremely easy to implement.
 
@@ -161,6 +162,8 @@ I’ve presented interesting new algorithms for random sampling, and all three a
 The appropriate choice is perhaps dictated more by the sampling scenario. Is the data stream length n or sample size k is known in advance? Is random access efficient? Or is the data distributed? The beauty is that these algorithms are so simple that you can implement them all.
 
 update: Micheal Shekelyan and Graham Cormode pointed out that a version of the sparse Fisher-Yates algorithm is also in a preprint in Arxiv: [CacheDiff: Fast Random Sampling](https://arxiv.org/abs/1512.00501) (Bui 2015). They also have a very recent [paper](http://proceedings.mlr.press/v130/shekelyan21a/shekelyan21a.pdf) (with code) on another neat method for in order sampling. It cleverly uses Fisher-Yates to reduce the main problem to a simple _with replacement_ sample. Check it out, and if you don’t have access to a binomial random number generator, it‘s likely the easiest in-order sampler to implement (and fastest).
+
+This is cross-posted from [Medium](https://engineering.tableau.com/fun-with-optimal-random-sampling-b08d72e77ade)
 
 \[1\] Bentley, John and Floyd, Robert (1987). A sample of brilliance. _Communications of the ACM_, 30(9):754–757.
 

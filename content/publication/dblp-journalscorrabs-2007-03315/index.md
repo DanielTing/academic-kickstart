@@ -2,7 +2,7 @@
 title: Manifold Learning via Manifold Deflation
 date: '2020-01-01'
 draft: true
-publishDate: '2021-07-13T00:34:46.528299Z'
+publishDate: '2021-07-13T22:25:12.345191Z'
 authors:
 - Daniel Ting
 - Michael I. Jordan
